@@ -10,7 +10,6 @@ const PORT = 4000;
 require('nodemon')
 
 const url = "mongodb+srv://" + process.env.DB_USER + ":" + process.env.DB_PASS + process.env.CLUSTER_NAME + "/test"
-// const url = "mongodb+srv://VrDb:KitchenCompanion5@mongcluster-s1yci.mongodb.net/test";
 var db
 
 app.use(cors());
