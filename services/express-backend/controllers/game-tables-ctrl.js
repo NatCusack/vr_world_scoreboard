@@ -1,4 +1,3 @@
-
 const HighScore = require('../models/game_tables.model.js');
 
 createHighScore = (req, res) => {
@@ -51,9 +50,9 @@ updateHighScore = async (req, res) => {
                 message: 'Entry not found!',
             })
         }
-        highScore.Username = body.Username
-        highScore.Game = body.Game
-        highScore.Highscore = body.Highscore
+        highScore.username = body.username
+        highScore.game = body.game
+        highScore.highscore = body.highscore
         highScore
             .save()
             .then(() => {
@@ -84,11 +83,13 @@ deleteHighScore = async (req, res) => {
                 .json({ success: false, error: `Entry not found` })
         }
 
-        return res.status(200).json({ success: true, data: highScore })
+        return res
+                .status(200)
+                .json({ success: true, data: highScore, message: 'Successfully deleted'  })
     }).catch(err => console.log(err))
 }
 
-geHighScoreByID = async (req, res) => {
+getHighScoreByID = async (req, res) => {
     await HighScore.findOne({ _id: req.params.id }, (err, highScore) => {
         if (err) {
             return res.status(400).json({ success: false, error: err })
@@ -121,6 +122,6 @@ module.exports = {
     createHighScore,
     updateHighScore,
     deleteHighScore,
-    geHighScoreByID,
+    getHighScoreByID,
     getHighScores,
 }

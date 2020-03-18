@@ -7,7 +7,7 @@ const router = express.Router()
 router.post('/highscore', GameTablesCtrl.createHighScore)
 router.put('/highscore/:id', GameTablesCtrl.updateHighScore)
 router.delete('/highscore/:id', GameTablesCtrl.deleteHighScore)
-router.get('/highscore/:id', GameTablesCtrl.geHighScoreByID)
+router.get('/highscore/:id', GameTablesCtrl.getHighScoreByID)
 router.get('/highscores', GameTablesCtrl.getHighScores)
 
 module.exports = router
