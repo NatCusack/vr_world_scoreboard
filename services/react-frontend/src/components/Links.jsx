@@ -33,13 +33,18 @@ class Links extends Component {
                                 Beat Saber
                             </Link>
                         </Item>
-                    </List>
-                    <List>
                         <Item>
                             <Link to="/highscores/arizonasunshine" className="nav-link">
                                 Arizona Sunshine
                             </Link>
                         </Item>
+                        <Item>
+                            <Link to="/highscores/pistolwhip" className="nav-link">
+                                Pistol Whip
+                            </Link>
+                        </Item>
+                    </List>
+                    <List>
                         <Item>
                             <Link to="/highscores/create" className="nav-link">
                                 Add Highscore

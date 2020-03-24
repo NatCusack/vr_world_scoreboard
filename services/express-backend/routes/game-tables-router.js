@@ -12,5 +12,6 @@ router.get('/highscores', GameTablesCtrl.getHighScores)
 router.get('/superhot', GameTablesCtrl.getSuperhotScores)
 router.get('/beatsaber', GameTablesCtrl.getBeatSaberScores)
 router.get('/arizonasunshine', GameTablesCtrl.getArizonaSunshineScores)
+router.get('/pistolwhip', GameTablesCtrl.getPistolWhipScores)
 
 module.exports = router
