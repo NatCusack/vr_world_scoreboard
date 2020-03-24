@@ -157,6 +157,19 @@ getArizonaSunshineScores = async (req, res) => {
         return res.status(200).json({ success: true, data: arizonaSunshineHighScore })
     }).catch(err => console.log(err))
 }
+getPistolWhipScores = async (req, res) => {
+    await HighScore.find( { game: 'Pistol Whip'}, (err, pistolWhipHighScore) => {
+        if(err) {
+            return res.status(400).json({ success: false, error: err })
+        }
+        if (!pistolWhipHighScore.length) {
+            return res
+                .status(404)
+                .json({ success: false, error: `Game not found` })
+        }
+        return res.status(200).json({ success: true, data: pistolWhipHighScore })
+    }).catch(err => console.log(err))
+}
 
 module.exports = {
     createHighScore,
@@ -167,4 +180,5 @@ module.exports = {
     getSuperhotScores,
     getBeatSaberScores,
     getArizonaSunshineScores,
+    getPistolWhipScores,
 }

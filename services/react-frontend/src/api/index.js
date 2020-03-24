@@ -12,7 +12,7 @@ export const getHighscoreById = id => api.get(`/highscore/${id}`)
 export const getSuperhotScores = () => api.get(`/superhot`)
 export const getBeatSaberScores = () => api.get(`/beatsaber`)
 export const getArizonaSunshineScores = () => api.get(`/arizonasunshine`)
-
+export const getPistolWhipScores = () => api.get(`/pistolwhip`)
 
 
 
@@ -25,6 +25,7 @@ const apis = {
     getSuperhotScores,
     getBeatSaberScores,
     getArizonaSunshineScores,
+    getPistolWhipScores,
 }
 
 export default apis

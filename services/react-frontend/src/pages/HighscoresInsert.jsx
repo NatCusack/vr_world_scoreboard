@@ -104,6 +104,7 @@ class HighscoresInsert extends Component {
               <option value="Beat Saber">Beat Saber</option>
               <option value="Arizona Sunshine">Arizona Sunshine</option>
               <option value="Superhot">Superhot</option>
+              <option value="Pistol Whip">Pistol Whip</option>
               <option value="Game4">Game4</option>
               <option value="Game5">Game5</option>
           </InputDropdown>
