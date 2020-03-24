@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { NavBar } from '../components';
-import { SuperhotScores, HighscoresInsert, HighscoresUpdate, BeatSaber, ArizonaSunshineScores, PistolWhipScores } from '../pages';
+import { SuperhotScores, HighscoresInsert, HighscoresUpdate, BeatSaber, ArizonaSunshineScores, PistolWhipScores, Home } from '../pages';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -10,6 +10,7 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
+        <Route exact path= "/" component ={Home} />
         <Route path="/highscores/superhotvr" exact component={SuperhotScores} />
         <Route path="/highscores/beatsaber" exact component={BeatSaber} />
         <Route path="/highscores/arizonasunshine" exact component={ArizonaSunshineScores} />
