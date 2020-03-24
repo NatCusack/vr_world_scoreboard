@@ -118,10 +118,53 @@ getHighScores = async (req, res) => {
     }).catch(err => console.log(err))
 }
 
+getSuperhotScores = async (req, res) => {
+    await HighScore.find( { game: 'Superhot'}, (err, superhotHighScore) => {
+        if(err) {
+            return res.status(400).json({ success: false, error: err })
+        }
+        if (!superhotHighScore.length) {
+            return res
+                .status(404)
+                .json({ success: false, error: `Game not found` })
+        }
+        return res.status(200).json({ success: true, data: superhotHighScore })
+    }).catch(err => console.log(err))
+}
+getBeatSaberScores = async (req, res) => {
+    await HighScore.find( { game: 'Beat Saber'}, (err, beatSaberHighScore) => {
+        if(err) {
+            return res.status(400).json({ success: false, error: err })
+        }
+        if (!beatSaberHighScore.length) {
+            return res
+                .status(404)
+                .json({ success: false, error: `Game not found` })
+        }
+        return res.status(200).json({ success: true, data: beatSaberHighScore })
+    }).catch(err => console.log(err))
+}
+getArizonaSunshineScores = async (req, res) => {
+    await HighScore.find( { game: 'Arizona Sunshine'}, (err, arizonaSunshineHighScore) => {
+        if(err) {
+            return res.status(400).json({ success: false, error: err })
+        }
+        if (!arizonaSunshineHighScore.length) {
+            return res
+                .status(404)
+                .json({ success: false, error: `Game not found` })
+        }
+        return res.status(200).json({ success: true, data: arizonaSunshineHighScore })
+    }).catch(err => console.log(err))
+}
+
 module.exports = {
     createHighScore,
     updateHighScore,
     deleteHighScore,
     getHighScoreByID,
     getHighScores,
+    getSuperhotScores,
+    getBeatSaberScores,
+    getArizonaSunshineScores,
 }
