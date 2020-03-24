@@ -9,7 +9,7 @@ import BeatSaberAbout from "./BeatSaberAbout"
 import ArizonaSunshineAbout from "./ArizonaSunshineAbout"
 import PistolWhipAbout from "./PistolWhipAbout"
 import Instructions from "./Instructions"
+import Home from './Home'
 
-
-export { SuperhotScores, HighscoresInsert, HighscoresUpdate, BeatSaber, ArizonaSunshineScores, PistolWhipScores, SuperhotAbout, BeatSaberAbout, ArizonaSunshineAbout, PistolWhipAbout, Instructions}
+export { SuperhotScores, HighscoresInsert, HighscoresUpdate, BeatSaber, ArizonaSunshineScores, PistolWhipScores, SuperhotAbout, BeatSaberAbout, ArizonaSunshineAbout, PistolWhipAbout, Instructions, Home}
 
