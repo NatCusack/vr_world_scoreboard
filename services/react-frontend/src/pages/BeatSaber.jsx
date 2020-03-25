@@ -63,8 +63,6 @@ class BeatSaber extends Component {
     this.setState({ isLoading: true })
 
     await api.getBeatSaberScores().then(highscores => {
-      console.log(highscores)
-
       this.setState({
         highscores: highscores.data.data,
         isLoading: false,
