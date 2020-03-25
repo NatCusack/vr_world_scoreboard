@@ -22,7 +22,7 @@ class UpdateHighscore extends Component {
     updateUser = event => {
         event.preventDefault()
 
-        window.location.href = `/highscores/update/${this.props.id}`
+        window.location.href = `/update/${this.props.id}`
     }
 
     render() {
