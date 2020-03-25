@@ -1,7 +1,16 @@
 import React from 'react'
-import { Container, Card, CardHeader, Button, CardText, Row, Col } from 'reactstrap';
+import { Container, Card, CardImg, CardHeader, Button, CardText, Row, Col } from 'reactstrap';
+import SHlogo from '../assets/SuperHot.jpg'
+import BSlogo from '../assets/BeatSaber.JPEG'
+import ASlogo from '../assets/ArizonaSunshine.JPEG'
+import PWlogo from '../assets/PistolWhip.png'
 
 export const Home = () => {
+
+  const imgStyle = {
+    maxHeight: 105,
+    maxWidth: 70,
+  }
 
   return (
     <Container className="HomePage" color="red">
@@ -10,7 +19,7 @@ export const Home = () => {
         <Col sm="6">
         <Card border="primary">
           <CardHeader>
-            <b><strong>Superhot VR</strong></b>
+            <b><strong><CardImg top width="100%" style={imgStyle} src={SHlogo} /> &nbsp; Superhot VR</strong></b>
           </CardHeader>
           <Card body>
               <CardText>
@@ -27,7 +36,7 @@ export const Home = () => {
         <Col sm="6">
           <Card border="primary">
           <CardHeader>
-            <b><strong>Beat Saber</strong></b>
+          <b><strong><CardImg top width="100%" style={imgStyle} src={BSlogo} /> &nbsp; Beat Saber</strong></b>
           </CardHeader>
             <Card body>
               <CardText>
@@ -47,7 +56,7 @@ export const Home = () => {
         <Col sm="6">
           <Card border="primary">
           <CardHeader>
-            <b><strong>Arizona Sunshine</strong></b>
+          <b><strong><CardImg top width="100%" style={imgStyle} src={ASlogo} /> &nbsp; Arizona Sunshine</strong></b>
           </CardHeader>
             <Card body>
               <CardText>
@@ -63,7 +72,7 @@ export const Home = () => {
         <Col sm="6">
           <Card border="primary">
           <CardHeader>
-            <b><strong>Pistol Whip</strong></b>
+          <b><strong><CardImg top width="100%" style={imgStyle} src={PWlogo} /> &nbsp;Pistol Whip</strong></b>
           </CardHeader>
             <Card body>
               <CardText>
