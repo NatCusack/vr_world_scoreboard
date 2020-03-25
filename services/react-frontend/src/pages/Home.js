@@ -23,9 +23,9 @@ export const Home = () => {
               <CardText>
                 <strong>Superhot is the first person shooter where...</strong>
               </CardText>
-              <Button href="/about/superhot">Click Here For More</Button>
+              <Button href="/about/superhot">Click Here For More Game Info</Button>
               <br />
-            <Button href="/highscores/superhotvr">View Table</Button>
+            <Button href="/highscores/superhotvr">View Highscore Table</Button>
           </Card>
         </Card>
       </Col>
@@ -40,9 +40,9 @@ export const Home = () => {
               <CardText>
                 <strong>Beat Saber is a VR rhythm game where...</strong>
               </CardText>
-              <Button href="/about/beatsaber">Click Here For More</Button>
+              <Button href="/about/beatsaber">Click Here For More Game Info</Button>
               <br />
-              <Button href="/highscores/beatsaber">View Table</Button>
+              <Button href="/highscores/beatsaber">View Highscore Table</Button>
           </Card>
           </Card>
         </Col>
@@ -60,9 +60,9 @@ export const Home = () => {
               <CardText>
                   <strong>Built exclusively for VR, Arizona Sunshine puts...</strong>
               </CardText>
-                <Button href="/about/arizonasunshine">Click Here For More</Button>
+                <Button href="/about/arizonasunshine">Click Here For More Game Info</Button>
                 <br />
-                <Button href="/highscores/arizonasunshine">View Table</Button>
+                <Button href="/highscores/arizonasunshine">View Highscore Table</Button>
             </Card>
           </Card>
         </Col>
@@ -76,9 +76,9 @@ export const Home = () => {
               <CardText>
                 <strong>Pistol Whip is an unstoppable...</strong>            
               </CardText>
-              <Button href="/about/pistolwhip">Click Here For More</Button>
+              <Button href="/about/pistolwhip">Click Here For More Game Info</Button>
               <br />
-              <Button href="/highscores/pistolwhip">View Table</Button>
+              <Button href="/highscores/pistolwhip">View Highscore Table</Button>
             </Card>
           </Card>
           <br/>
