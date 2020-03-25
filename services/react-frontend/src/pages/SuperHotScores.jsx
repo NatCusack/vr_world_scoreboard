@@ -22,7 +22,7 @@ class UpdateHighscore extends Component {
     updateUser = event => {
         event.preventDefault()
 
-        window.location.href = `/highscores/update/${this.props.id}`
+        window.location.href = `/update/${this.props.id}`
     }
 
     render() {
@@ -36,7 +36,7 @@ class DeleteHighscore extends Component {
 
         if (
             window.confirm(
-                `Do tou want to delete the score ${this.props.username} permanently?`,
+                `Do you want to delete the score ${this.props.username} permanently?`,
             )
         ) {
             api.deleteHighscoreById(this.props.id)

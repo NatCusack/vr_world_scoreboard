@@ -24,29 +24,29 @@ class Links extends Component {
                 <Collapse>
                     <List>
                         <Item>
-                            <Link to="/highscores/superhotvr" className="nav-link">
+                            <Link to="/superhot" className="nav-link">
                                 Superhot VR
                             </Link>
                         </Item>
                         <Item>
-                            <Link to="/highscores/beatsaber" className="nav-link">
+                            <Link to="/beatsaber" className="nav-link">
                                 Beat Saber
                             </Link>
                         </Item>
                         <Item>
-                            <Link to="/highscores/arizonasunshine" className="nav-link">
+                            <Link to="/arizonasunshine" className="nav-link">
                                 Arizona Sunshine
                             </Link>
                         </Item>
                         <Item>
-                            <Link to="/highscores/pistolwhip" className="nav-link">
+                            <Link to="/pistolwhip" className="nav-link">
                                 Pistol Whip
                             </Link>
                         </Item>
                     </List>
                     <List>
                         <Item>
-                            <Link to="/highscores/create" className="nav-link">
+                            <Link to="/create" className="nav-link">
                                 Add Highscore
                             </Link>
                         </Item>

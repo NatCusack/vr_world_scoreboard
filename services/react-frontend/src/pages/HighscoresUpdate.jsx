@@ -79,8 +79,8 @@ class HighscoresUpdate extends Component {
       this.setState({
         username: '',
         game: '',
-        highscore: '',
       })
+      window.history.go(-1); return false;
     })
   }
 
@@ -97,6 +97,8 @@ class HighscoresUpdate extends Component {
 
   render() {
     const { username, game, highscore } = this.state
+    const redirect = game.replace(/\s/g, '');
+
     return (
       <Wrapper>
         <Title>Update Highscore</Title>
@@ -116,6 +118,7 @@ class HighscoresUpdate extends Component {
             <option value="Beat Saber">Beat Saber</option>
             <option value="Arizona Sunshine">Arizona Sunshine</option>
             <option value="Superhot">Superhot</option>
+            <option value="Pistol Whip">Pistol Whip</option>
         </InputDropdown>
 
         <Label>Score: </Label>
@@ -127,7 +130,7 @@ class HighscoresUpdate extends Component {
         />
 
         <Button onClick={this.handleUpdateHighscore}>Update Highscore</Button>
-        <CancelButton href={'/highscores/list'}>Cancel</CancelButton>
+        <CancelButton href={"/" + redirect}>Cancel</CancelButton>
       </Wrapper>
     )
   }

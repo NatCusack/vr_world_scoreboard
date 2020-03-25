@@ -80,6 +80,7 @@ class HighscoresInsert extends Component {
             game: '',
             highscore: '',
         })
+        window.location.href='/'
     })
 }
 
@@ -105,8 +106,6 @@ class HighscoresInsert extends Component {
               <option value="Arizona Sunshine">Arizona Sunshine</option>
               <option value="Superhot">Superhot</option>
               <option value="Pistol Whip">Pistol Whip</option>
-              <option value="Game4">Game4</option>
-              <option value="Game5">Game5</option>
           </InputDropdown>
 
         <Label>Score: </Label>
@@ -120,10 +119,10 @@ class HighscoresInsert extends Component {
         />
 
         <Button onClick={this.handleIncludeHighscore}>Add High Score</Button>
-        <CancelButton href={'/highscores/list'}>Cancel</CancelButton>
+        <CancelButton href="/">Cancel</CancelButton>
       </Wrapper>
     )
   }
 }
-
+  
 export default HighscoresInsert

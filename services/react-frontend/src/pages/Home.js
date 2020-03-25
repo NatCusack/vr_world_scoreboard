@@ -1,12 +1,5 @@
 import React from 'react'
-import { Container, Card, CardHeader, Button, CardText, Row, Col, Spinner } from 'reactstrap';
-import styled from 'styled-components';
-
-const Styles = styled.div`
-  align: center;
-  margin-bottom: 2em;
-  text-align: center;
-  `;
+import { Container, Card, CardHeader, Button, CardText, Row, Col } from 'reactstrap';
 
 export const Home = () => {
 
@@ -25,7 +18,7 @@ export const Home = () => {
               </CardText>
               <Button href="/about/superhot">Click Here For More Game Info</Button>
               <br />
-            <Button href="/highscores/superhotvr">View Highscore Table</Button>
+            <Button href="/superhot">View Highscore Table</Button>
           </Card>
         </Card>
       </Col>
@@ -42,7 +35,7 @@ export const Home = () => {
               </CardText>
               <Button href="/about/beatsaber">Click Here For More Game Info</Button>
               <br />
-              <Button href="/highscores/beatsaber">View Highscore Table</Button>
+              <Button href="/beatsaber">View Highscore Table</Button>
           </Card>
           </Card>
         </Col>
@@ -62,7 +55,7 @@ export const Home = () => {
               </CardText>
                 <Button href="/about/arizonasunshine">Click Here For More Game Info</Button>
                 <br />
-                <Button href="/highscores/arizonasunshine">View Highscore Table</Button>
+                <Button href="/arizonasunshine">View Highscore Table</Button>
             </Card>
           </Card>
         </Col>
@@ -78,7 +71,7 @@ export const Home = () => {
               </CardText>
               <Button href="/about/pistolwhip">Click Here For More Game Info</Button>
               <br />
-              <Button href="/highscores/pistolwhip">View Highscore Table</Button>
+              <Button href="/pistolwhip">View Highscore Table</Button>
             </Card>
           </Card>
           <br/>
