@@ -51,6 +51,13 @@ class Links extends Component {
                             </Link>
                         </Item>
                     </List>
+                    <List>
+                        <Item>
+                            <Link to="/instructions" className="nav-link">
+                                Help?
+                            </Link>
+                        </Item>
+                    </List>
                 </Collapse>
             </React.Fragment>
         )
