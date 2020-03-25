@@ -22,7 +22,7 @@ export const ArizonaSunshineAbout = () => (
                     </td>
                     <td>
                         <a href="https://store.steampowered.com/app/342180/Arizona_Sunshine/">
-                            <img src={ASlogo} width="200" alt="Steam - Beat Saber" />
+                            <img src={ASlogo} width="200" alt="Steam - Arizona Sunshine" />
                             </a>
                     </td>
                 </tr>
