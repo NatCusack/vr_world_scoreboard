@@ -18,9 +18,9 @@ export const Instructions = () => (
             <li><a href="/pistolwhip">Pistol Whip</a></li>
             <li><a href="/superhot">Super Hot</a></li>
         </ul>
-        <p>Each Game has an independant scoreboard page which you can visit by clicking the game's name in the list above or by visting the homepage and clicking the "View Highscore Table" to the corresponding game.</p>
+        <p>Each Game has an independant scoreboard page which you can visit by clicking the game's name in the list above, by visting the homepage and clicking the "View Highscore Table" to the corresponding game or by pressing the game you would like in the Navigation bar.</p>
         <h3>Tables</h3>
-        <p>By default, the scoreboard will display the top 10 scores and the accompanying username. This order however, can be changed by click the title of the row you want the data organised in. For example clicking "username" will organise the scoreboard alphabetically. By Clicking username again, it will reverse the order.</p>
+        <p>By default, the scoreboard will display the top 10 scores and the accompanying username. This order however, can be changed by click the title of the row you want the data organised in. You can order the data either by score or username. For example clicking "username" will organise the scoreboard alphabetically. By Clicking username again, it will reverse the order.</p>
         <a><img src={Alph} width="1200" alt="Alphabetical Order" /></a>
         <a style={{textAlign: "center"}}>&emsp;&emsp;Scoreboard ordered alphabetically</a>
         <p></p>
