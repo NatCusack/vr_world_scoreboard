@@ -11,12 +11,12 @@ export const Instructions = () => (
             Website User Guide</p>
         </h1>
         <h3>Welcome to the VR World Leaderboards!</h3>
-        <p>This website is designed to display the high score off all games in VR World. For demonstartion purposes we have a catalog of 4 Games:</p>
+        <p>This website is designed to display the high score of all games in VR World. For demonstration purposes we have a catalog of 4 Games:</p>
         <ul>
-            <li><a href="/arizonasunshine">Arizona Sunshine</a></li>
-            <li><a href="/beatsaber">Beat Saber</a></li>
-            <li><a href="/pistolwhip">Pistol Whip</a></li>
             <li><a href="/superhot">Super Hot</a></li>
+            <li><a href="/beatsaber">Beat Saber</a></li>
+            <li><a href="/arizonasunshine">Arizona Sunshine</a></li>
+            <li><a href="/pistolwhip">Pistol Whip</a></li>
         </ul>
         <p>Each Game has an independant scoreboard page which you can visit by clicking the game's name in the list above, by visting the homepage and clicking the "View Highscore Table" to the corresponding game or by pressing the game you would like in the Navigation bar.</p>
         <h3>Tables</h3>
