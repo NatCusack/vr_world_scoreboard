@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { NavBar } from '../components';
-import Login from '../containers/Login'
 import { SuperhotScores, HighscoresInsert, HighscoresUpdate, BeatSaber, ArizonaSunshineScores, PistolWhipScores, BeatSaberAbout, SuperhotAbout, ArizonaSunshineAbout, PistolWhipAbout, Instructions, Home } from '../pages';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+//
 function App() {
   return (
     <Router>
